@@ -1,5 +1,52 @@
-body {
+:root {
+  /* Setting colour themes as variables to its easier to change in the future */
+  --mainColour: #784794;
+  --mainFont: #36424a;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--mainFont);
+}
+
+/* Nav Bar styles START */
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.nav-logo {
+  margin: 0 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--mainColour);
+}
+.nav-links-wrapper {
+  display: flex;
+  margin-right: 100px;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0 30px;
+  color: var(--mainFont);
+
+  /* Adding transition-property to smoothly change colours and scale on hover */
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+.nav-link:hover {
+  /* inscrease scale by 10% on hover */
+  transform: scale(1.1);
+  color: var(--mainColour);
+}
+/* Nav Bar styles END */
 
 /* Gallery Page styles START */
 
