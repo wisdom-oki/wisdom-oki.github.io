@@ -1,7 +1,10 @@
 :root {
   /* Setting colour themes as variables to its easier to change in the future */
   --mainColour: #784794;
+  --secondaryColour: #eaecec;
   --mainFont: #36424a;
+
+  --galleryHeight: 400px;
 }
 * {
   padding: 0;
@@ -9,7 +12,9 @@
   box-sizing: border-box;
 }
 body {
+  /* Setting default font and its colour */
   color: var(--mainFont);
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Nav Bar styles START */
@@ -34,12 +39,14 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.3rem;
-  margin: 0 30px;
+  margin: 0 10px;
+  padding: 30px;
   color: var(--mainFont);
 
   /* Adding transition-property to smoothly change colours and scale on hover */
   transition-property: all;
-  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
 }
 .nav-link:hover {
   /* inscrease scale by 10% on hover */
@@ -49,5 +56,57 @@ body {
 /* Nav Bar styles END */
 
 /* Gallery Page styles START */
+.gallery-content-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+/* Gallery text */
+.gallery-info {
+  height: var(--galleryHeight);
+  position: relative;
+  flex: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--secondaryColour);
+}
+.info-wrapper {
+  position: absolute;
+  padding: 0 70px;
+
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+.info-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.info-hidden {
+  opacity: 0;
+}
+
+/* Gallery images */
+.gallery-wrapper {
+  height: var(--galleryHeight);
+  position: relative;
+  flex: 3;
+  width: 100%;
+}
+
+.gallery-image {
+  position: absolute;
+  width: 100%;
+  height: var(--galleryHeight);
+  opacity: 1;
+
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+.image-hidden {
+  opacity: 0;
+}
 
 /* Gallery Page styles END */
