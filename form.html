@@ -22,7 +22,46 @@
         </div>
     </div>
     <!-- Nav Bar End -->
-    <h1>h1 test forms</h1>
+    <h1>Please fill all boxes below</h1>
+	<form>
+		<br>
+			<label>Name:</label> <!-- entery points for name surname email and number-->
+		</br>
+			<input name="Name" type="text" size=25 id="nameData" />
+			<br>
+			<label> surname: </label>
+			</br>
+			<input name="surname" type="text" size=25 id="nameData" />
+		<br>
+			<label> number: </label>
+		</br>
+			<input name="number" type="text" size=25 id="numberData" />
+		<br>
+			<label> email: </label>
+		</br>
+			<input name="email" type="text" size=25 id="emailData" />
+		<br>
+		<!-- radio cricles start -->
+		<p>Gender:</p>
+		<div class="form-check">
+				<input name="gender" class="form-check-input" type="radio" value="Male" id="gender">
+				<label class="form-check-label" for="flexCheckDefault">Male</label>
+		
+		</div>
+		<div class="form-check">
+		  <input name="gender" class="form-check-input" type="radio" value="Female" id="gender">
+		  <label class="form-check-label" for="flexCheckDefault">Female</label>
+		 </div>
+		 
+  
+		<div class="form-check">
+		  <input name="gender" class="form-check-input" type="radio" value="Null" id="gender">
+		  <label class="form-check-label" for="flexCheckDefault">Prefer not to say</label>
+		</div>
+		<!-- radio cricles end -->
+			<input type="button" value="submit" class="btn btn-primary" onclick="validate()"> <!-- will start javascript when button is pressed	-->		
+		</br>
+	</form>
 </body>
 
 </html>
