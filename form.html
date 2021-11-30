@@ -3,12 +3,47 @@
 
 <head>
     <title>Project</title>
+	<!-- use of bootstrap 5
+	date:11/30/2021
+	source: https://getbootstrap.com/ -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles/shared-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 	<script src="javascript/form.js" type="text/javascript" ></script>
+	<script> // will move this to external js when completed 
+		function validate(){
+			var input = document.getElementById("nameData").value;
+			if (input.length < 2){
+			alert("Invalid name entered please try again") // check for valid name 
+			}
+			var input = document.getElementById("nameData2").value;
+			if (input.length < 2){
+			alert("Invalid surname entered please try again") // check for valid surname 
+			}
+			//check for number
+			
+			
+			var input = document.getElementById("emailData").value;
+			var symbol = input.indexOf("@");// will look for  a @ in email
+			if(symbol < 1){
+			alert("Invalid email entered please try again")// check for valid email 
+			}
+			//code used and edited from java point
+			//date 11/30/2021
+			//source: https://www.javatpoint.com/how-to-check-a-radio-button-using-javascript
+			if(document.getElementById("Male").checked == true) {   
+			document.getElementById("feedback").innerHTML = "Male selected"
+			}
+			if(document.getElementById("Female").checked == true) {   
+			document.getElementById("feedback").innerHTML = "Female selected"
+			}//will show text of what gender the user picked below submit
+			
+		
+		}
+	
+	</script>
 </head>
 
 <body>
@@ -31,7 +66,7 @@
 			<br>
 			<label> surname: </label>
 			</br>
-			<input name="surname" type="text" size=25 id="nameData" />
+			<input name="surname" type="text" size=25 id="nameData2" />
 		<br>
 			<label> number: </label>
 		</br>
@@ -42,26 +77,24 @@
 			<input name="email" type="text" size=25 id="emailData" />
 		<br>
 		<!-- radio cricles start -->
-		<p>Gender:</p>
+		<p>Gender optional:</p>
 		<div class="form-check">
-				<input name="gender" class="form-check-input" type="radio" value="Male" id="genderData">
+				<input name="gender" class="form-check-input" type="radio" value="Male" id="Male">
 				<label class="form-check-label" for="flexCheckDefault">Male</label>
 		
 		</div>
 		<div class="form-check">
-		  <input name="gender" class="form-check-input" type="radio" value="Female" id="genderData">
+		  <input name="gender" class="form-check-input" type="radio" value="Female" id="Female">
 		  <label class="form-check-label" for="flexCheckDefault">Female</label>
 		 </div>
 		 
   
-		<div class="form-check">
-		  <input name="gender" class="form-check-input" type="radio" value="Null" id="genderData">
-		  <label class="form-check-label" for="flexCheckDefault">Prefer not to say</label>
-		</div>
 		<!-- radio cricles end -->
 			<input type="button" value="submit" class="btn btn-primary" onclick="validate()"> <!-- will start javascript when button is pressed	-->		
 		</br>
 	</form>
+	<h6 id="feedback"></h6>
+	<h6 id="feedback2"></h6>
 </body>
 
 </html>
