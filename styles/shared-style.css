@@ -35,6 +35,11 @@ body {
   font-size: 1.5rem;
   color: var(--mainColour);
 }
+.logo {
+  width: 200px;
+  color: var(--mainColour);
+  fill: var(--mainColour);
+}
 .nav-links-wrapper {
   display: flex;
   margin-right: 100px;
