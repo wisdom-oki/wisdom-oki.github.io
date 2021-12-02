@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="/javascript/gallery.js"></script>
   </head>
 
   <body>
@@ -33,61 +34,81 @@
       <!-- Nav Bar End -->
 
       <!-- Gallery Start -->
-      <div class="gallery-content-wrapper">
-        <div class="gallery-info">
-          <div id="text1" class="info-wrapper">
-            <div class="info-title">Image 1 text</div>
-            <div class="info-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu
-              imperdiet quam. Proin vitae consectetur odio. Curabitur mi ante,
-              egestas vel accumsan quis, ultricies ut leo. Aliquam interdum
-              vulputate consectetur. Curabitur ut dapibus risus. Mauris sagittis
-              mauris vestibulum nulla euismod hendrerit. Mauris vel placerat
-              lacus. Nullam tincidunt scelerisque leo, nec euismod tortor.
-              Praesent ut semper elit.
-            </div>
-          </div>
 
-          <div id="text2" class="info-wrapper info-hidden">
-            <div class="info-title">Image 2 text</div>
-            <div class="info-body">
-              Nullam consequat ultricies nisi quis tincidunt. Fusce mauris
-              magna, lacinia vel ipsum sed, malesuada egestas libero. Mauris
-              auctor ac ipsum ut aliquet. Pellentesque augue felis, ornare sed
-              dignissim a, sagittis quis mauris. Curabitur id dui sem. Aliquam
-              erat volutpat.
-            </div>
+      <div class="gallery-content-wrapper">
+        <div class="preview-content-wrapper">
+          <div class="preview-image-wrapper">
+            <img
+              class="preview-image"
+              src="images/iamge_1.jpg"
+              alt="students"
+            />
+            <div class="preview-text">About Us</div>
+          </div>
+          <div class="preview-image-wrapper">
+            <img
+              class="preview-image"
+              src="images/iamge_1.jpg"
+              alt="students"
+            />
+            <div class="preview-text">Smaple Text</div>
+          </div>
+          <div class="preview-image-wrapper">
+            <img
+              class="preview-image"
+              src="images/iamge_1.jpg"
+              alt="students"
+            />
+            <div class="preview-text">Smaple Text</div>
+          </div>
+          <div class="preview-image-wrapper">
+            <img
+              class="preview-image"
+              src="images/iamge_1.jpg"
+              alt="students"
+            />
+            <div class="preview-text">Smaple Text</div>
+          </div>
+          <div class="preview-image-wrapper">
+            <img
+              class="preview-image"
+              src="images/iamge_1.jpg"
+              alt="students"
+            />
+            <div class="preview-text">Smaple Text</div>
+          </div>
+          <div class="preview-image-wrapper">
+            <img
+              class="preview-image"
+              src="images/iamge_1.jpg"
+              alt="students"
+            />
+            <div class="preview-text">Smaple Text</div>
           </div>
         </div>
+
+        <!-- Selected Image Start -->
         <div class="gallery-wrapper">
-          <!-- IMAGES START -->
-          <img
-            id="image1"
-            class="gallery-image"
-            src="images/Image_2.jpg"
-            alt="students"
-          />
-          <img
-            id="image2"
-            class="gallery-image image-hidden"
-            src="images/iamge_1.jpg"
-            alt="students"
-          />
-          <!-- IMAGES END -->
-          <!-- BUTTONS START -->
-          <div class="button-wrapper">
-            <div
-              class="image-button button-active"
-              onclick="galleryButton(0)"
-            ></div>
-            <div class="image-button" onclick="galleryButton(1)"></div>
+          <div class="gallery-image-wrapper">
+            <img class="gallery-image" src="images/iamge_1.jpg" alt="" />
+            <div class="gallery-text">
+              <div class="text-title">About Us</div>
+              <div class="text-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                varius augue diam, at hendrerit metus placerat vitae. Fusce
+                iaculis auctor velit eu tincidunt. Mauris et est porttitor,
+                tincidunt erat at, imperdiet massa. Mauris pulvinar, sem sed
+                sollicitudin suscipit, leo elit elementum lorem, vel vehicula
+                lacus mauris quis quam.
+              </div>
+            </div>
           </div>
-          <!-- BUTTONS END -->
         </div>
       </div>
-      <!-- Gallery End -->
-    </div>
 
-    <script src="/javascript/gallery.js"></script>
+      <!-- Gallery End -->
+
+      <div class="footer">footer placeholder</div>
+    </div>
   </body>
 </html>
