@@ -75,7 +75,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgb(209, 209, 209);
   width: 100%;
 }
 
@@ -117,10 +116,11 @@ body {
 }
 
 .gallery-wrapper {
-  background: yellow;
+  position: relative;
+  height: 800px;
 }
 .gallery-image-wrapper {
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 .gallery-image {
@@ -139,6 +139,7 @@ body {
   width: 40%;
   padding-left: 50px;
 
+  /* sets the background as gradient instead of a solid colour */
   background-image: linear-gradient(to right, #00000077, #00000044, #00000000);
 }
 .text-title {
@@ -147,6 +148,14 @@ body {
 }
 .text-paragraph {
   font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  transform: scale(1.05);
 }
 /* Gallery Page styles END */
 
