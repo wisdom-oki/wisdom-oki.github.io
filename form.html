@@ -26,46 +26,61 @@
     </div>
     <!-- Nav Bar End -->
     <h1>Please fill all boxes below</h1>
-	<form>
-		<br>
-			<label>Name:</label> <!-- entery points for name surname email and number-->
-		</br>
-			<input name="Name" type="text" size=25 id="nameData" />
-			<br>
-			<label> surname: </label>
-			</br>
-			<input name="surname" type="text" size=25 id="nameData2" />
-		<br>
-			<label> number: </label>
-		</br>
-			<input name="number" type="text" size=25 id="numberData" />
-		<br>
-			<label> email: </label>
-		</br>
-			<input name="email" type="text" size=25 id="emailData" />
-		<br>
-		<!-- radio cricles start -->
-		<p>Gender (optional):</p>
-		<div class="form-check">
-				<input name="gender" class="form-check-input" type="radio" value="Male" id="Male">
-				<label class="form-check-label" for="flexCheckDefault">Male</label>
-		
+	<div class="row">
+		<div class="col-sm-4">
+			<form>
+				<br>
+					<label>Name:</label> <!-- entery points for name surname email and number-->
+				</br>
+					<input name="Name" type="text" size=25 id="nameData" />
+					<br>
+					<label> surname: </label>
+					</br>
+					<input name="surname" type="text" size=25 id="nameData2" />
+				<br>
+					<label> number: </label>
+				</br>
+					<input name="number" type="text" size=25 id="numberData" />
+				<br>
+					<label> email: </label>
+				</br>
+					<input name="email" type="text" size=25 id="emailData" />
+				<br>
+				<!-- radio cricles start -->
+				<p>Gender (optional):</p>
+				<div class="form-check">
+						<input name="gender" class="form-check-input" type="radio" value="Male" id="Male">
+						<label class="form-check-label" for="flexCheckDefault">Male</label>
+				
+				</div>
+				<div class="form-check">
+				  <input name="gender" class="form-check-input" type="radio" value="Female" id="Female">
+				  <label class="form-check-label" for="flexCheckDefault">Female</label>
+				 </div>
+				 <!-- radio cricles end -->
+				<input type="button" value="submit" class="btn btn-primary" onclick="validate()"> <!-- will start javascript when button is pressed	-->		
+				<h6 id="feedback2"></h6>
+				<h6 id="feedback5"></h6>
+				<h6 id="feedback4"></h6>
+				<h6 id="feedback3"></h6>
+				<h6 id="feedback"></h6>
+				
 		</div>
-		<div class="form-check">
-		  <input name="gender" class="form-check-input" type="radio" value="Female" id="Female">
-		  <label class="form-check-label" for="flexCheckDefault">Female</label>
-		 </div>
+		
+		<div class="col-sm-4">
+			<h3> Title</h3>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et males.</p>
+		</div>
+		
+		<div class="col-sm-4">
+			<img src="images/Image_3.jpg" alt="school image">
+		</div>
+	</div>
 		 
   
-		<!-- radio cricles end -->
-			<input type="button" value="submit" class="btn btn-primary" onclick="validate()"> <!-- will start javascript when button is pressed	-->		
+		
 		</br>
 	</form>
-	<h6 id="feedback2"></h6>
-	<h6 id="feedback5"></h6>
-	<h6 id="feedback4"></h6>
-	<h6 id="feedback3"></h6>
-	<h6 id="feedback"></h6>
 </body>
 
 </html>
