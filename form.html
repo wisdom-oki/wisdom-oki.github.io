@@ -17,7 +17,9 @@
 <body>
     <!-- Nav Bar Start -->
     <div class="nav-wrapper">
-        <div class="nav-logo">LOGO HERE</div>
+        <div class="nav-logo">
+        <img class="logo" src="images/Custom NCI Logo.svg  " />
+      </div>
         <div class="nav-links-wrapper">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="form.html">Form</a>
@@ -28,6 +30,7 @@
     <h1>Please fill all boxes below</h1>
 	<div class="row">
 		<div class="col-sm-4">
+		<!-- form start-->
 			<form>
 				<br>
 					<label>Name:</label> <!-- entery points for name surname email and number-->
@@ -58,12 +61,16 @@
 				  <label class="form-check-label" for="flexCheckDefault">Female</label>
 				 </div>
 				 <!-- radio cricles end -->
-				<input type="button" value="submit" class="btn btn-primary" onclick="validate()"> <!-- will start javascript when button is pressed	-->		
-				<h6 id="feedback2"></h6>
-				<h6 id="feedback5"></h6>
-				<h6 id="feedback4"></h6>
-				<h6 id="feedback3"></h6>
-				<h6 id="feedback"></h6>
+				<input type="button" value="submit" class="btn btn-primary" onclick="validate()">	<!-- will start javascript when button is pressed	-->	
+			</br>
+			</form>	
+			<!-- form ends-->
+			<!-- form feedback for correct entries -->		
+			<h6 id="feedback2"></h6>
+			<h6 id="feedback5"></h6>
+			<h6 id="feedback4"></h6>
+			<h6 id="feedback3"></h6>
+			<h6 id="feedback"></h6>
 				
 		</div>
 		
@@ -78,9 +85,6 @@
 	</div>
 		 
   
-		
-		</br>
-	</form>
 </body>
 
 </html>
