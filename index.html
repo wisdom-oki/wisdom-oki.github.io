@@ -18,50 +18,76 @@
   </head>
 
   <body>
-    <!-- Nav Bar Start -->
-    <div class="nav-wrapper">
-      <div class="nav-logo">
-        <img class="logo" src="images/Custom NCI Logo.svg  " />
-      </div>
-      <div class="nav-links-wrapper">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="form.html">Form</a>
-        <a class="nav-link" href="game.html">Game</a>
-      </div>
-    </div>
-    <!-- Nav Bar End -->
-
-    <!-- Gallery Start -->
-    <div class="gallery-content-wrapper">
-      <div class="gallery-info">
-        <div id="text1" class="info-wrapper">
-          <div class="info-title">TITLE</div>
-          <div class="info-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu
-            imperdiet quam. Proin vitae consectetur odio. Curabitur mi ante,
-            egestas vel accumsan quis, ultricies ut leo. Aliquam interdum
-            vulputate consectetur. Curabitur ut dapibus risus. Mauris sagittis
-            mauris vestibulum nulla euismod hendrerit. Mauris vel placerat
-            lacus. Nullam tincidunt scelerisque leo, nec euismod tortor.
-            Praesent ut semper elit.
-          </div>
+    <div class="page-wrapper">
+      <!-- Nav Bar Start -->
+      <div class="nav-wrapper">
+        <div class="nav-logo">
+          <img class="logo" src="images/Custom NCI Logo.svg  " />
+        </div>
+        <div class="nav-links-wrapper">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="form.html">Form</a>
+          <a class="nav-link" href="game.html">Game</a>
         </div>
       </div>
-      <div class="gallery-wrapper">
-        <img
-          id="image1"
-          class="gallery-image"
-          src="images/Image_2.jpg"
-          alt="students"
-        />
-        <img
-          id="image2"
-          class="gallery-image"
-          src="images/iamge_1.jpg"
-          alt="students"
-        />
+      <!-- Nav Bar End -->
+
+      <!-- Gallery Start -->
+      <div class="gallery-content-wrapper">
+        <div class="gallery-info">
+          <div id="text1" class="info-wrapper">
+            <div class="info-title">Image 1 text</div>
+            <div class="info-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu
+              imperdiet quam. Proin vitae consectetur odio. Curabitur mi ante,
+              egestas vel accumsan quis, ultricies ut leo. Aliquam interdum
+              vulputate consectetur. Curabitur ut dapibus risus. Mauris sagittis
+              mauris vestibulum nulla euismod hendrerit. Mauris vel placerat
+              lacus. Nullam tincidunt scelerisque leo, nec euismod tortor.
+              Praesent ut semper elit.
+            </div>
+          </div>
+
+          <div id="text2" class="info-wrapper info-hidden">
+            <div class="info-title">Image 2 text</div>
+            <div class="info-body">
+              Nullam consequat ultricies nisi quis tincidunt. Fusce mauris
+              magna, lacinia vel ipsum sed, malesuada egestas libero. Mauris
+              auctor ac ipsum ut aliquet. Pellentesque augue felis, ornare sed
+              dignissim a, sagittis quis mauris. Curabitur id dui sem. Aliquam
+              erat volutpat.
+            </div>
+          </div>
+        </div>
+        <div class="gallery-wrapper">
+          <!-- IMAGES START -->
+          <img
+            id="image1"
+            class="gallery-image"
+            src="images/Image_2.jpg"
+            alt="students"
+          />
+          <img
+            id="image2"
+            class="gallery-image image-hidden"
+            src="images/iamge_1.jpg"
+            alt="students"
+          />
+          <!-- IMAGES END -->
+          <!-- BUTTONS START -->
+          <div class="button-wrapper">
+            <div
+              class="image-button button-active"
+              onclick="galleryButton(0)"
+            ></div>
+            <div class="image-button" onclick="galleryButton(1)"></div>
+          </div>
+          <!-- BUTTONS END -->
+        </div>
       </div>
+      <!-- Gallery End -->
     </div>
-    <!-- Gallery End -->
+
+    <script src="/javascript/gallery.js"></script>
   </body>
 </html>
