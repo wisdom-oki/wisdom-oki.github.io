@@ -34,10 +34,10 @@ function validate() {
     //code learned from java point W.O
     //date 11/30/2021
     //source: https://www.javatpoint.com/how-to-check-a-radio-button-using-javascript
-    if (document.getElementById("Male").checked == true) {
+    if (document.getElementById("Male").checked) {
         document.getElementById("feedback").innerHTML = "Male selected"
     }
-    if (document.getElementById("Female").checked == true) {
+    if (document.getElementById("Female").checked) {
         document.getElementById("feedback").innerHTML = "Female selected"
     } //will show text of what gender the user picked below submit W.O
 
