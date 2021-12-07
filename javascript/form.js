@@ -4,14 +4,14 @@ name = prompt(" Welcome. Please enter your name");
 alert("Hi " + name + "\n This page is to sign up for the next open day happening here. please fill in the valid information into the form and once everything is valid it will automaticaly send an email to you");
 
 function validate() {
-    var input = document.getElementById("nameData").value;
-    if (input.length < 2) {
+    var userName = document.getElementById("nameData").value;
+    if (userName.length < 2) {
         alert("Invalid name entered please try again") // check for valid name W.O
     } else {
         document.getElementById("feedback2").innerHTML = "Valid name" // if correct W.O
     }
-    var input = document.getElementById("nameData2").value;
-    if (input.length < 2) {
+    var userSurname = document.getElementById("nameData2").value;
+    if (userSurname.length < 2) {
         alert("Invalid surname entered please try again") // check for valid surname W.O 
     } else {
         document.getElementById("feedback5").innerHTML = "Valid surname" // if correct W.O
@@ -41,8 +41,8 @@ function validate() {
         document.getElementById("feedback").innerHTML = "Female selected"
     } //will show text of what gender the user picked below submit W.O
 
-    var input = document.getElementById("emailData").value;
-    var symbol = input.indexOf("@"); // will look for  a @ in email W.O
+    var userEmail = document.getElementById("emailData").value;
+    var symbol = userEmail.indexOf("@"); // will look for  a @ in email W.O
     if (symbol < 1) {
         alert("Invalid email entered please try again") // check for valid email W.O
     } else {
