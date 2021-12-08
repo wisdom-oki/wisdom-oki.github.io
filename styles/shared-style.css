@@ -20,6 +20,7 @@ body {
     /* Setting default font and its colour */
     color: var(--mainFont);
     font-family: 'Roboto', sans-serif;
+	background-color: #eaecec;
 }
 
 .page-wrapper {
@@ -185,4 +186,11 @@ body {
     width: 100%;
     background: chocolate;
     height: 100px;
+}
+.text-form{
+	color:#784794;
+	
+}
+.form-image{
+	border: 5px solid #784794;
 }
