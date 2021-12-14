@@ -21,6 +21,7 @@ body {
     color: var(--mainFont);
     font-family: 'Roboto', sans-serif;
 	background-color: #eaecec;
+	background-image: url("../images/back.png");
 }
 
 .page-wrapper {
