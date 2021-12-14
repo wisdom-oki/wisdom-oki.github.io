@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- page by Tadhg (T.S)-->
+
 <head>
     <title>NCI support game</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,8 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <script src="javascript/p5/p5.js"></script>
-    <script src="javascript/game-script.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -29,7 +28,21 @@
         </div>
     </div>
     <!-- Nav Bar End -->
-    <h1>h1 test game</h1>
+    <div class="game-area">
+        <div style="display: table-cell; vertical-align: middle;">
+            <!-- Equasion -->
+            <p id="equasionText"> EquasionTest</p>
+            <form action="">
+                <input type="number" name="" id="answerInput">
+                <input type="button" value="Check" , onclick="validateAnswer()">
+            </form>
+            <!-- Result -->
+            <p id="resultText">ResultTest</p>
+            <!-- Score -->
+            <p id="scoreText">ScoreTest</p>
+        </div>
+    </div>
 </body>
+<script src="javascript/game-script.js" type="text/javascript"></script>
 
 </html>

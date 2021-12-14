@@ -39,6 +39,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    height: 20%;
 }
 
 .nav-logo {
@@ -82,7 +83,7 @@ body {
 /* Nav Bar styles END */
 
 
-/* Gallery Page styles START */
+/* Gallery styles START */
 
 .gallery-content-wrapper {
     display: flex;
@@ -178,7 +179,39 @@ body {
 }
 
 
-/* Gallery Page styles END */
+/* Gallery styles END */
+
+
+/* Game styles START */
+
+
+/* rounded box to put form in */
+
+.game-area {
+    display: table;
+    background: #cccccc;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 0px;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 200px);
+    /* overflow: hidden; */
+}
+
+.game-area .result-success {
+    color: green;
+    outline: black;
+}
+
+.game-area .result-fail {
+    color: red;
+    outline: black;
+}
+
+
+/* Game styles END */
 
 
 /* FOOTER */
@@ -188,11 +221,12 @@ body {
     background: chocolate;
     height: 100px;
 }
-.text-form{
-	color:#784794;
-	
+
+.text-form {
+    color: #784794;
 }
-.form-image{
-	border: 5px solid #784794;
-	width: 437px;
+
+.form-image {
+    border: 5px solid #784794;
+    width: 437px;
 }
