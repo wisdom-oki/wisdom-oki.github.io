@@ -4,7 +4,6 @@ const previewImages = document.getElementsByClassName('preview-image-wrapper');
 const mainImages = document.getElementsByClassName('gallery-image-wrapper');
 
 function galleryButton(id) {
-  //Hide all non-active iamges
   for (let i = 0; i < previewImages.length; i++) {
     if (i != id) {
       //hide non-active images/text
