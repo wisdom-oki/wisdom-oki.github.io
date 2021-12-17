@@ -20,8 +20,8 @@ body {
   /* Setting default font and its colour */
   color: var(--mainFont);
   font-family: 'Roboto', sans-serif;
-  /* background-color: #eaecec;
-	background-image: url("../images/Back.png"); */
+   background-color: #eaecec;
+	background-image: url("../images/Back.png");
 }
 
 .page-wrapper {
