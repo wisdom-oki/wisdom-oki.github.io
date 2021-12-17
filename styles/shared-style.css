@@ -136,6 +136,7 @@ body {
 .gallery-image-wrapper {
   position: absolute;
   width: 100%;
+  min-width: 290px;
 }
 
 .gallery-image {
@@ -269,5 +270,8 @@ body {
   }
   .text-paragraph {
     font-size: 0.8rem;
+  }
+  .preview-image {
+    width: 140px;
   }
 }
