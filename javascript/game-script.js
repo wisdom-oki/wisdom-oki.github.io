@@ -16,6 +16,7 @@ var resultElement = document.getElementById("resultText");
 var scoreElement = document.getElementById("scoreText");
 
 scoreElement.innerHTML = "Score: " + currentScore;
+resultElement.innerHTML = "";
 
 generateQuestion();
 
@@ -64,12 +65,12 @@ function generateQuestion() {
             break;
         case 2:
             expectedAnswer = firstNumber * secondNumber;
-            equasionElement.innerHTML = firstNumber + " * " + secondNumber;
+            equasionElement.innerHTML = firstNumber + " x " + secondNumber;
             break;
         case 3:
             // reduces complexity to be more in line with other question types
-            firstNumber = Math.floor(firstNumber / 5);
-            secondNumber = Math.floor(secondNumber / 5);
+            firstNumber = Math.max(Math.floor(firstNumber / 5), 1);
+            secondNumber = Math.max(Math.floor(secondNumber / 5), 1);
 
             //prevents answers with decimals
             expectedAnswer = firstNumber;
