@@ -15,11 +15,13 @@ var inputElement = document.getElementById("answerInput");
 var resultElement = document.getElementById("resultText");
 var scoreElement = document.getElementById("scoreText");
 
+// Sets the initial values for some elements
 scoreElement.innerHTML = "Score: " + currentScore;
 resultElement.innerHTML = "";
 
 generateQuestion();
 
+// called by the button on the website. compares the user input to the expected answer. if the answers match, the user gets a point.
 function validateAnswer() {
     var input = inputElement.value;
     if (input == expectedAnswer) {
@@ -32,9 +34,11 @@ function validateAnswer() {
         resultElement.innerHTML = "Nope. Correct answer: \"" + expectedAnswer + "\". You have lost 3'500'000 Social Credit";
     }
     inputElement.value = "";
+    //a new question is generated after every answer attempt, correct or not
     generateQuestion();
 }
 
+//function to generate and display a new maths question. also changes the expected answer
 function generateQuestion() {
     // small chance to pick a bonus question
     if (Math.random() < 0.1) {
